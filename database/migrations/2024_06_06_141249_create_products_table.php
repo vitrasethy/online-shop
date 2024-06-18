@@ -11,7 +11,7 @@ return new class extends Migration {
             $table->id();
             $table->string('name');
             $table->integer('price');
-            $table->string('photo');
+            $table->string('photo', 1000);
             $table->timestamps();
         });
     }
